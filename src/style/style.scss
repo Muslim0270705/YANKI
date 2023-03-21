@@ -1,2 +1,21 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;700&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Raleway",sans-serif;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 30px;
+  margin: 0 auto;
+  width: 100%;
+}
+@mixin text($fw,$fz,$lh,$cl){
+  font-weight: $fw;
+  font-size: $fz;
+  line-height: $lh;
+  color:$cl;
+}
