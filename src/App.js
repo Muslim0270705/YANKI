@@ -1,4 +1,5 @@
 import {Routes, Route} from 'react-router-dom'
+import "style/style.scss"
 function App() {
   return (
     <div className="App">
