@@ -1,0 +1,46 @@
+.footer{
+  padding-bottom: 10px ;
+  &__menu{
+    display: flex;
+    align-items: center;
+    column-gap: 47px;
+    margin-bottom: 20px;
+    &-item{
+      display: block;
+      width: 250px;
+      @include text(300,20px,23px,#252525)
+    }
+    &-link{
+      display: block;
+      width: 250px;
+      transition: 0.5s;
+      @include text(200,16px,19px,#252525);
+      &:hover{
+        transition: 0.5s;
+        background: #00000050;
+      }
+    }
+    &-icons{
+      display: flex;
+      column-gap: 10px;
+      align-items: center;
+    }
+  }
+  &__links{
+    display: flex;
+    column-gap: 47px;
+  }
+  &__lk{
+    display: flex;
+    flex-direction: column;
+    row-gap:10px;
+  }
+  &__bottom{
+    margin-top: 50px;
+    text-align: center;
+    &-desc{
+      @include text(300,14px,12px,#252525)
+    }
+  }
+
+}
