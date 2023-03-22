@@ -1,0 +1,37 @@
+.header{
+  padding-top: 10px ;
+  background: black;
+  &__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__burger{
+
+  }
+  &__nav{
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+    &-item{
+      color: white;
+    }
+  }
+
+  &__YANKI{
+    display: flex;
+  }
+
+  &__language{
+    display: flex;
+    column-gap:9px;
+    color: white;
+  }
+  &__profile{
+    display: flex;
+    &-item{
+      display: flex;
+      column-gap: 33px;
+    }
+  }
+  }
