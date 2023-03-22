@@ -1,10 +1,11 @@
 import React from 'react';
+import New from "./New/New";
 
 const Home = () => {
     return (
-        <div>
-            sagasgasf
-        </div>
+        <>
+            <New/>
+        </>
     );
 };
 
