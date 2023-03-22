@@ -1,0 +1,29 @@
+.new{
+  background: url("../images/Фон-new.png") center/cover no-repeat;
+  padding: 393px 0 453px;
+  text-align: center;
+  &__title{
+    @include text(300,46px,54px,white);
+    opacity: 0.85;
+    position: relative;
+    &:before{
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #FFFFFF;
+      width: 120px;
+      height: 1px;
+      bottom: -20px;
+    }
+  }
+  &__desc{
+    @include text(300,16px,19px,white);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 41px;
+    column-gap: 10px;
+  }
+}
