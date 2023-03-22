@@ -19,7 +19,7 @@ const Category = () => {
                     Категории
                 </h2>
                     <Swiper style={{width:"100%"}}
-                        spaceBetween={50}
+                        spaceBetween={15}
                         modules={[Navigation]}
                         slidesPerView={4}
                         navigation = {true}
