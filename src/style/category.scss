@@ -1,0 +1,54 @@
+.category{
+  padding: 100px 0;
+  .swiper-button-next{
+    right: 25px;
+  }
+  .swiper-button-next:after{
+    content: 'next';
+    color: white;
+    font-size: 22px;
+    padding: 8px 13px;
+    background: #E0BEA2;
+    opacity: 0.8;
+  }
+  .swiper-button-prev:after{
+    content: 'prev';
+    color: white;
+    font-size: 22px;
+    padding: 8px 13px;
+    background: #E0BEA2;
+    opacity: 0.8;
+  }
+  .swiper-button-prev{
+    left: 25px;
+  }
+  &__title{
+    @include text(300,36px,42px,#252525);
+    margin-bottom: 50px;
+  }
+  .swiper-slide{
+    margin-right: 15px!important;
+    width: 273px!important;
+  }
+  &__card{
+    padding-top: 410px;
+    height: 450px;
+    position: relative;
+    &-img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    &-title{
+      width: 100%;
+      background: rgba(224, 190, 162, 0.75);
+      backdrop-filter: blur(3px);
+      text-align: center;
+      @include text(300,20px,23px,white);
+      padding: 10px 0;
+    }
+  }
+}
