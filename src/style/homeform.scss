@@ -1,0 +1,43 @@
+.homeform{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 100px;
+
+  .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+    margin: 50px 0 20px;
+  }
+  &__title{
+    @include text(300,36px,42px,#252525);
+
+  }
+  &__desc{
+    text-align: center;
+    @include text(200,16px,19px,#252525)
+  }
+  &__label{
+    width: 600px;
+  }
+  &__input{
+    width: 100%;
+    padding: 16px 0 16px 265px;
+    border: 0.5px solid #252525;
+
+    &::placeholder{
+
+      @include text(200,16px,19px,rgba(37, 37, 37, 0.5))
+    }
+  }
+  &__btn{
+    background: #E0BEA2;
+    border: none;
+    text-transform: uppercase;
+    @include text(300,16px,19px,#ffffff80);
+    padding: 17px;
+  }
+}
