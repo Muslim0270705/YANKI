@@ -19,6 +19,9 @@
   line-height: $lh;
   color:$cl;
 }
+.black{
+  color: black!important;
+}
 @import "footer";
 
 @import "header";
@@ -26,3 +29,4 @@
 @import "new";
 @import "category";
 @import "netflix";
+@import "catalog";

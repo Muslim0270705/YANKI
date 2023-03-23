@@ -1,0 +1,83 @@
+.catalog{
+  padding: 100px 0;
+  &__home{
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    &-deck{
+      @include text(300,16px,19px,#252525)
+    }
+  }
+  &__category{
+    padding-top: 30px;
+    display: flex;
+    width: 25%;
+    position: sticky;
+    height: 100vh;
+    top: 0;
+    flex-direction: column;
+    row-gap: 20px;
+    &-item{
+      @include text(300,16px,19px,#252525)
+    }
+    &-title{
+      @include text(300,22px,23px,#252525);
+      margin-bottom: 10px;
+    }
+  }
+  &__product{
+    display: flex;
+    align-items: flex-start;
+  }
+  &__products{
+    width: 75%;
+    padding-top: 30px;
+  }
+  &__filter{
+    display: flex;
+    column-gap: 15px;
+    margin-bottom: 30px;
+  }
+  &__row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:30px 15px;
+  }
+  &__card{
+    width:calc(33.33333% - 10px) ;
+    text-align: center;
+    img{
+      width: 100%;
+    }
+    &-info{
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+
+      &-sale{
+
+        @include text(700,16px,19px,#252525)
+      }
+
+      &-sizes{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 5px;
+
+      }
+      &-size{
+        @include text(300,16px,19px, rgba(37, 37, 37, 0.5))
+      }
+      &-text{
+        @include text(300,13px,19px,#252525);
+        span{
+          @include text(300,13px,19px,#E0BEA2)
+        }
+      }
+    }
+  }
+
+
+}
