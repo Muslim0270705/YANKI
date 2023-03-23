@@ -19,9 +19,7 @@
   line-height: $lh;
   color:$cl;
 }
-.black{
-  color: black!important;
-}
+
 @import "footer";
 
 @import "header";
@@ -29,8 +27,8 @@
 @import "new";
 @import "category";
 @import "netflix";
-<<<<<<< HEAD
+
 @import "catalog";
-=======
+
 @import "homeform";
->>>>>>> 51abe1c378bb67252f747b745713e23c82535a6c
+

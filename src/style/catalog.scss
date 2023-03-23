@@ -18,7 +18,12 @@
     flex-direction: column;
     row-gap: 20px;
     &-item{
-      @include text(300,16px,19px,#252525)
+      @include text(300,16px,19px,#252525);
+      transition: 0.3s;
+      &:hover{
+        color: #E0BEA2;
+        transition: 0.3s;
+      }
     }
     &-title{
       @include text(300,22px,23px,#252525);
@@ -50,11 +55,16 @@
     img{
       width: 100%;
     }
+
     &-info{
       display: flex;
       flex-direction: column;
       row-gap: 5px;
-
+      &-color{
+        display: flex;
+        column-gap: 5px;
+        justify-content: center;
+      }
       &-sale{
 
         @include text(700,16px,19px,#252525)
